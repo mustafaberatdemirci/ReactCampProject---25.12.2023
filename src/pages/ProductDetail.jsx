@@ -17,10 +17,9 @@ export default function ProductDetail() {
       <Card.Group>
         <Card fluid>
           <Card.Content>
-            {product.images && product.images.length > 0 && (
-              <Image floated="right" 
-              size="mini" 
-              src={product.images[0]} />
+            {product.thumbnail && (
+              <Image floated="mid" 
+              src={product.thumbnail} />
             )}
             <Card.Header>{product.title}</Card.Header>
             <Card.Meta>{product.category}</Card.Meta>
